@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>SmileDetect</title>
+  <link rel="stylesheet" href="css/diagnosa.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+  <div class="logo">
+    <img src="assets/icons/logo.png">
+    <span>SmileDetect</span>
+  </div>
+
+  <div class="user">
+    <img src="assets/icons/user.png">
+    <span>uchina dontol</span>
+    <img class="logout" src="assets/icons/logout.png">
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-wrapper">
+  <div class="hero-overlay">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-title">Hello Uchina dontol</p>
+        <p class="hero-subtitle">Selamat Datang di SmileDetect.</p>
+
+        <p class="hero-desc">
+          SmileDetect adalah platform cerdas yang dirancang untuk membantu Anda
+          melakukan diagnosa awal penyakit gigi secara mandiri. Cukup masukkan
+          gejala yang Anda rasakan, dan dapatkan rekomendasi perawatan serta akses
+          ke informasi kesehatan gigi yang lengkap dan terpercaya.
+        </p>
+
+        <p class="hero-desc hero-desc--far">
+          Ambil kendali penuh atas kesehatan gigi Anda. Mulai diagnosa gejala yang
+          Anda rasakan sekarang untuk mendapatkan rekomendasi perawatan terbaik.
+        </p>
+      </div>
+
+      <div class="hero-img">
+        <img src="assets/img/ilustrasi.png">
+        <button class="primary hero-btn">Mulai Diagnosa Sekarang</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV -->
+<nav class="menu">
+  <button class="active"><img src="assets/icons/diagnosa.png"> Diagnosa</button>
+  <button><img src="assets/icons/history.png"> Riwayat</button>
+  <button><img src="assets/icons/disease.png"> Penyakit Gigi</button>
+  <button><img src="assets/icons/tips.png"> Tips Kesehatan</button>
+</nav>
+
+<!-- CONTENT -->
+<main class="card">
+  <h3>Diagnosa Penyakit Gigi</h3>
+  <p class="subtitle">Pilih Gejala Yang di Alami</p>
+
+  <div class="symptoms">
+    <!-- 24 CHECKBOX -->
+    <label><input type="checkbox"> Gusi bengkak</label>
+    <label><input type="checkbox"> Gigi ngilu</label>
+    <label><input type="checkbox"> Bau mulut tak sedap</label>
+    <label><input type="checkbox"> Gusi nyeri</label>
+    <label><input type="checkbox"> Gusi bernanah</label>
+    <label><input type="checkbox"> Gigi goyang</label>
+
+    <label><input type="checkbox"> Penumpukan plak/karang</label>
+    <label><input type="checkbox"> Gusi sakit saat makan</label>
+    <label><input type="checkbox"> Gusi berdarah</label>
+    <label><input type="checkbox"> Gigi berlubang</label>
+    <label><input type="checkbox"> Gigi patah</label>
+    <label><input type="checkbox"> Gigi renggang</label>
+
+    <label><input type="checkbox"> Gigi sakit terus menerus</label>
+    <label><input type="checkbox"> Gigi tampak kuning</label>
+    <label><input type="checkbox"> Radang gusi</label>
+    <label><input type="checkbox"> Gusi mengkilap</label>
+    <label><input type="checkbox"> Mulut tak sedap/pahit</label>
+    <label><input type="checkbox"> Mulut menjadi kering</label>
+
+    <label><input type="checkbox"> Gusi sakit saat disentuh</label>
+    <label><input type="checkbox"> Terlihat noda hitam/coklat</label>
+    <label><input type="checkbox"> Gusi sangat gatal</label>
+    <label><input type="checkbox"> Nyeri saat mengunyah</label>
+    <label><input type="checkbox"> Gusi merah/keunguan</label>
+    <label><input type="checkbox"> Gusi turun</label>
+  </div>
+
+  <div class="actions">
+    <button class="primary" onclick="analyze()">Analisa Gejala</button>
+    <button class="secondary" onclick="resetForm()">Reset</button>
+  </div>
+</main>
+
+<script src="script/script.js"></script>
+</body>
+</html>

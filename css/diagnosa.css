@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 32px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user img {
+  width: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 450px;
+  padding: 40px 60px;
+
+  background-repeat: no-repeat;
+
+  /* INI KUNCINYA */
+  background-size: cover;
+  background-position: 70% center; /* geser isi gambar ke kanan */
+}
+
+.hero-overlay {
+  width: 100%;          /* dari 85% → 95% */
+  min-height: 360px;
+
+  margin: 0 auto;
+  padding: 40px 60px;
+
+  background: rgba(111, 168, 255, 0.75);
+}
+
+.hero-wrapper {
+  width: 100%;
+  background-image: url("../assets/img/dokter.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* KUNCI: sejajar kanan gambar */
+
+  margin-right: 80px; /* tidak mentok kanan */
+  margin-top: 40px;   /* turun ke bawah */
+
+  gap: 16px;
+}
+
+.hero-img img {
+  width: 230px;          /* dari 130 → 170 (proporsional) */
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.primary.hero-btn {
+  padding: 8px 16px;     /* LEBIH KECIL */
+  font-size: 13px;       /* teks lebih kecil */
+  border-radius: 6px;    /* lebih ramping */
+}
+
+.hero-text {
+  width: 55%;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 18px;
+
+}
+
+.hero-subtitle {
+  font-size: 18px;
+
+  /* jarak kecil ke paragraf pertama */
+  margin-bottom: 8px;
+}
+
+.hero-desc {
+  margin-top: 12px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.hero-desc {
+  margin-top: 14px;   /* jarak normal antar teks */
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.hero-desc--far {
+  margin-top: 140px;   /* JARAK JAUH sesuai permintaan */
+}
+
+/* NAV */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menu img {
+  width: 18px;
+}
+
+.menu .active {
+  background: #e6efff;
+  color: #1a4fd8;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  margin: 0 40px 40px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.subtitle {
+  margin: 10px 0 20px;
+  color: #666;
+}
+
+/* CHECKBOX GRID */
+.symptoms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.symptoms label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #0b1d3a;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
