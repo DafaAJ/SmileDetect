@@ -20,19 +20,83 @@ body {
 
 .logo {
   display: flex;
-  gap: 10px;
   align-items: center;
-  font-weight: bold;
+  gap: 12px;
+
+  margin-left: -30px; /* geser sedikit ke kiri */
 }
 
 .logo img {
-  width: 32px;
+  width: 60px; /* BESARKAN logo */
+  height: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text .title {
+  font-size: 15px;
+  font-weight: normal; /* TIDAK BOLD */
+  color: #0b1d3a; /* biru tua */
+}
+
+.logo-text .subtitle {
+  font-size: 12px;
+  font-weight: normal;
+  color: #000; /* hitam */
+  opacity: 0.7; /* mirip email */
 }
 
 .user {
   display: flex;
-  gap: 10px;
+  align-items: flex-start; /* icon sejajar ke atas (nama) */
+  gap: 12px;
+}
+
+.user-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.email {
+  font-size: 12px;
+  color: #777;
+}
+
+.logout-btn {
+  margin-top: 6px;
+  display: inline-flex;
   align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  font-size: 12px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain; /* PENTING: biar gak gepeng */
 }
 
 .user img {
@@ -78,9 +142,9 @@ body {
   flex-direction: column;
   align-items: flex-end; /* KUNCI: sejajar kanan gambar */
 
-  margin-right: 80px; /* tidak mentok kanan */
+  margin-right: 10px; /* tidak mentok kanan */
   margin-top: 40px;   /* turun ke bawah */
-
+  
   gap: 16px;
 }
 
@@ -99,6 +163,8 @@ body {
 .hero-text {
   width: 55%;
   color: #ffffff;
+
+  margin-left: -60px; /* geser ke kiri sedikit */
 }
 
 .hero-title {
@@ -163,6 +229,7 @@ body {
   margin: 0 40px 40px;
   padding: 30px;
   border-radius: 12px;
+  border: 1px solid #666;
 }
 
 .subtitle {
